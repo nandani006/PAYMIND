@@ -1,0 +1,11 @@
+{
+  "name": "paymind-enterprise",
+  "version": "1.0.0",
+  "description": "PAYMIND Enterprise — AI-Powered Autonomous B2B Procurement & Spending Intelligence Platform",
+  "private": true,
+  "scripts": {
+    "verify-submission": "node scripts/pre-submission-check.js",
+    "clean": "node scripts/clean-repository.js"
+  }
+}
+

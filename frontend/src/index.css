@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 98%; /* #F8F9FC warm off-white */
+    --foreground: 222 47% 11%; /* #101828 midnight navy */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 243 100% 68%; /* #635BFF refined fintech indigo */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%; /* #F2F4F7 */
+    --secondary-foreground: 222 47% 11%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%; /* #667085 */
+    --accent: 243 100% 97%;
+    --accent-foreground: 243 75% 59%;
+    --destructive: 354 70% 54%; /* #D92D20 */
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%; /* #EAECF0 */
+    --input: 220 13% 91%;
+    --ring: 243 100% 68%;
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#F8F9FC] text-slate-900 antialiased font-sans selection:bg-indigo-100 selection:text-indigo-900;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11', 'tnum';
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D0D5DD;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #98A2B3;
+}
